@@ -1,0 +1,17 @@
+<% for(var i = 0; i < employee.length; i++) { %>
+<tr>
+    <td><%= employee[i].first_name %></td>
+    <td><%= employee[i].last_name %></td>
+    <td><%= employee[i].email %></td>
+    <td><%= employee[i].mobile %></td>
+    <td>
+        <a href="/update-employee?id=<%= employee[i]._id%>" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="btn border-shadow delete" data-id=<%= employee[i]._id%>
+            <span class="text-gradient"><% if(employee[i].deletedAt == 'Activate') {%> Activate <%} else {%> Deactivate <%}%></span>
+        </a>
+
+    </td>
+</tr>
+<% } %>

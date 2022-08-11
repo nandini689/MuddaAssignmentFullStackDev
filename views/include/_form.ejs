@@ -1,0 +1,89 @@
+<!-- form handling -->
+<form action="/api/employee" method="POST" id="add_employee">
+  <div class="new_employee">
+    <div class="form-group">
+      <label for="first_name" class="text-light">First Name</label>
+      <input type="hidden" name="id" value="" />
+      <input type="text" name="first_name" value="" placeholder="Mark" />
+    </div>
+    <div class="form-group">
+      <label for="last_name" class="text-light">Last Name</label>
+      <input type="text" name="last_name" value="" placeholder="John" />
+    </div>
+    <div class="form-group">
+      <label for="Email" class="text-light">Email</label>
+      <input
+        type="text"
+        name="email"
+        value=""
+        placeholder="example@gmail.com"
+      />
+    </div>
+    <div class="form-group">
+      <label for="Mobile" class="text-light">Mobile</label>
+      <input type="text" name="mobile" value="" placeholder="+91xxxxxxxx" />
+    </div>
+    <!-- <div class="form-group">
+      <label for="gender" class="text-light">Gender</label>
+      <div class="radio inline">
+        <input type="radio" id="radio-2" name="gender" value="Male" />
+        <label for="radio-2" class="radio-label">Male</label>
+      </div>
+      <div class="radio inline">
+        <input type="radio" id="radio-3" name="gender" value="Female" />
+        <label for="radio-3" class="radio-label">Female</label>
+      </div>
+    </div> -->
+    <div class="form-group">
+      <label for="designation" class="text-light">Designation</label>
+      <input type="text" name="designation" value="" placeholder="Software Engineer"
+      />
+    </div>
+    <!-- <div class="form-group">
+      <label for="dateOfJoining" class="text-light">Date Of Joining</label>
+      <input type="date" name="dateOfJoining" value="" />
+    </div> -->
+    <div class="form-group">
+      <label for="manager" class="text-light">Reporting Manager</label>
+      <input type="text" name="manager" value="" />
+    </div>
+    <div class="form-group">
+      <label for="salary" class="text-light">Salary</label>
+        <input type="number" name="salary" value="" />
+    </div>
+    <div class="form-group">
+      <label for="employeecode" class="text-light">Employee Code</label>
+        <input type="number" name="employeecode" value="" placeholder="0001" />
+    </div>
+    <div class="form-group">
+      <label for="location" class="text-light">Location</label>
+        <input type="text" name="location" value="" placeholder="Bangalore" />
+    </div>
+    <div class="form-group">
+      <label for="state" class="text-light">State</label>
+        <input type="text" name="state" value="" placeholder="Karnataka" />
+    </div>
+    <div class="form-group">
+      <label for="country" class="text-light">Country</label>
+        <input type="text" name="country" value="" placeholder="India" />
+    </div>
+    <div class="form-group">
+      <label for="department" class="text-light">Department</label>
+        <input type="text" name="department" value="" placeholder="IT" />
+    </div>
+    <div class="form-group">
+      <label for="deletedAt" class="text-light">Status</label>
+      <div class="radio inline">
+        <input type="radio" id="radio-4" name="deletedAt" value="Activate" />
+        <label for="radio-4" class="radio-label">Activate</label>
+      </div>
+      <div class="radio inline">
+        <input type="radio" id="radio-5" name="deletedAt" value="Deactivate" />
+        <label for="radio-5" class="radio-label">Deactivate</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn text-dark update">Save</button>
+    </div>
+  </div>
+</form>
